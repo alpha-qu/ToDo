@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Proxima+Nova');
+body
+{
+    font-family: "Proxima Nova";
+}
+header
+{
+    margin: 25px;
+}
+input
+{
+    border-radius: 4px;
+    border: 1px solid aquamarine;
+    min-height: 25px;
+    padding-left: 15px;
+    font-size: 15px;
+    width: 66%;
+}
+
+button
+{
+    font-size: 15px;
+    border-radius: 4px;
+    border: 1px solid darkgrey;
+    margin: 5px 10px;
+    background-color: lightseagreen ;
+    cursor: pointer;
+    transition: 100ms;
+    min-height: 25px;
+
+}
+button:hover
+{
+    transform: scale(1.1,1.1);
+    transition: 100ms;
+}
+img
+{
+    margin-top: 2px;
+}
+li{
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid darkcyan;
+}
+.title-note
+{
+    text-align: center;
+    color: darkcyan;
+    font-size: 40px;
+}
+.title-description
+{
+    text-align: center;
+    color: darkgrey;
+}
+.input-task
+{
+    text-align: center;
+    margin: 20px;
+}
+.delete
+{
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: 4px;
+    margin: 0;
+}
+.update
+{
+    background-color: white;
+    position: absolute;
+    right: 50px;
+    top: 4px;
+    margin: 0;
+}
+.done
+{
+    background-color: white;
+    position: absolute;
+    right: 50px;
+    margin: 0;
+}
+#inp
+{
+    width: 30%;
+}
+#result
+{
+    max-width: 50%;
+    margin: 0 auto;
+}
