@@ -47,7 +47,7 @@ function deleteNode() {
 }
 function updateNode() {
     this.parentNode.innerHTML =
-        "<input type = 'text'> " +
+        "<input type = 'text' placeholder = 'Enter the task to update...'> " +
         "<button title = 'Done' type = 'button' onclick = 'func1(this)' class = 'done'>" +
         "<img src = 'done.png' height = '25' width = '25' " +
         "</button> ";
