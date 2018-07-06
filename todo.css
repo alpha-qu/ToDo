@@ -1,3 +1,7 @@
+/*00829b*/
+/*00a7c2*/
+/*30c8df*/
+/*15aabf*/
 @import url('https://fonts.googleapis.com/css?family=Proxima+Nova');
 body
 {
@@ -38,11 +42,15 @@ img
 {
     margin-top: 2px;
 }
+ul
+{
+    padding-left: 10px;
+}
 li{
-    position: relative;
     padding-top: 10px;
     padding-bottom: 10px;
     border-bottom: 1px solid darkcyan;
+    min-height: 26px;
 }
 .title-note
 {
@@ -60,28 +68,65 @@ li{
     text-align: center;
     margin: 20px;
 }
+#buttons
+{
+    width: 25%;
+    position: relative;
+}
 .delete
 {
-    background-color: white;
+    width: 30px;
+    height: 32px;
+    border: none;
+    border-radius: 2px;
+    padding: 4px;
+    color: white;
     position: absolute;
     right: 0;
-    top: 4px;
-    margin: 0;
+    top: -7px;
 }
 .update
 {
-    background-color: white;
+
+    border: none;
+    color: white;
+    height: 32px;
+    width: 30px;
+    border-radius: 2px;
+    padding: 4px;
     position: absolute;
-    right: 50px;
-    top: 4px;
-    margin: 0;
+    right: 35px;
+    top: -7px;
 }
 .done
 {
-    background-color: white;
-    position: absolute;
-    right: 50px;
+    border: none;
+    color: white;
+    width: 30px;
+    height: 32px;
+    border-radius: 2px;
+    padding: 4px;
     margin: 0;
+    position: absolute;
+    right: 45px;
+}
+.hide
+{
+    display: none;
+}
+#container
+{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+#content
+{
+    width: 75%;
+}
+#content span
+{
+    word-wrap: break-word;
 }
 #inp
 {
@@ -89,6 +134,31 @@ li{
 }
 #result
 {
-    max-width: 50%;
+    max-width: 80%;
     margin: 0 auto;
+}
+@media screen and (max-width: 420px) {
+    .delete
+    {
+        top: 35px;
+    }
+    .update
+    {
+        top: 0;
+        right: 0;
+    }
+    .done
+    {
+        right: 10px;
+    }
+    li
+    {
+        min-height: 70px;
+    }
+}
+@media screen and (max-width: 227px) {
+    #busttons
+    {
+        float: right;
+    }
 }
